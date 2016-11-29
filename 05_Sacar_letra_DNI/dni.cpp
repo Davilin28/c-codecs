@@ -3,11 +3,12 @@
 
 int main(){
 
-    char letras[]="TRWAGMYFPDXBNJZSQVHLCKE"; // Esto es un array o vector para calcular la letra.
     int dni, letra;
+    char letras[]="TRWAGMYFPDXBNJZSQVHLCKE"; // Esto es un array o vector para calcular la letra.
 
     printf("Introduce tu dni\n");
     scanf("%d", &dni);
+    system ("clear");
 
     if(dni<=999999999){ // Si el dni es menor a 99999999 haz:
         letra = dni%23; // Dividimos el numero entero entre 23

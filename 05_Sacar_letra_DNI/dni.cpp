@@ -3,8 +3,8 @@
 
 int main(){
 
+    char letras[] = "TRWAGMYFPDXBNJZSQVHLCKE"; // Esto es un array o vector para calcular la letra.
     int dni, letra;
-    char letras[]="TRWAGMYFPDXBNJZSQVHLCKE"; // Esto es un array o vector para calcular la letra.
 
     printf("Introduce tu dni\n");
     scanf(" %d", &dni);

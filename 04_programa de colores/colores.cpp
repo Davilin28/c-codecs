@@ -1,71 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define rojo 1
-#define amarillo 2
-#define azul 3
-
 int main(){
+    int rojo, amarillo, azul;
 
-	int color1, color2;
+    /* Bloque de entrada de datos */
+    printf("Rojo (0/1): ");
+    scanf(" %i", &rojo);
 
-	MENU:
+    printf("Amarillo (0/1): ");
+    scanf(" %i", &amarillo);
 
-	printf ("¿Cual es el primer color que ves?: (Indique el nº)\n"
-		"\t1. Rojo \n"
-		"\t2. Amarillo \n"
-		"\t3. Azul\n"
-	       );
+    printf("Azul (0/1): ");
+    scanf(" %i", &azul);
 
-	scanf(" %i", &color1);
+    /* Procesado */
 
-	printf ("¿Cual es el segundo color que ves?: (Indique el nº)\n"
-		"\t1. Rojo \n"
-		"\t2. Amarillo \n"
-		"\t3. Azul\n"
-	       );
+    if (rojo)
+        if (amarillo)
+            if (azul)
+                printf("Blanco");
+            else
+                printf("Naranja");
+        else
+            if (azul)
+                printf("morado");
+            else
+                printf("Rojo");
 
-	scanf(" %i", &color2);
+    else
+        if (amarillo)
+            if (azul)
+                printf("verde");
+            else
+                printf("amarillo");
+        else
+            if (azul)
+                printf("azul");
+            else
+                printf("negro");
 
-        system ("clear");
 
-	if (color1 == rojo and color2 == amarillo){
-		printf ("Su color es Naranja\n");
-	}
+    printf("\n");
 
-	if (color1 == rojo and color2 == azul){
-		printf ("Su color es Morado\n");
-	}
-
-	if (color1 == rojo and color2 == rojo){
-		printf ("No puede coger el mismo color\n");
-		goto MENU;
-	}
-
-	if (color1 == amarillo and color2 == rojo){
-		printf ("Su color es Naranja\n");
-	}
-
-	if (color1 == amarillo and color2 == azul){
-		printf ("Su color es Verde\n");
-	}
-
-	if (color1 == amarillo and color2 == amarillo){
-		printf ("No puede coger el mismo color\n");
-		goto MENU;
-	}
-
-	if (color1 == azul and color2 == rojo){
-		printf ("Su color es Morado\n");
-	}
-
-	if (color1 == azul and color2 == amarillo){
-		printf ("Su color es Verde\n");
-	}
-
-	if (color1 == azul and color2 == azul){
-		printf ("No puede coger el mismo color\n");
-		goto MENU;
-	}
- return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }

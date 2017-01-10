@@ -4,11 +4,12 @@
 
 int main(){
 
-    printf("Codigo asci:\n");
+    int numero;
 
-    for(int con =0; con < 256; con++);
+    printf("Indica en numero para monstrarlo en ascii\n");
+    scanf(" %i", &numero);
 
-    printf("%i.- %c\n",con,con);
+    printf("Tu numero es ascii es: %i => %c\n", numero,numero);
 
     return EXIT_SUCCESS;
 }

@@ -4,7 +4,7 @@
 
 int main(){
 
-    char palabra[]= "Julio Cesar";
+    char palabra[]= "pene";
 
     for(int con=0; con < sizeof(palabra)/sizeof(char)-1; con++)
 

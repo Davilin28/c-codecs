@@ -5,7 +5,7 @@ int main(int argc, char *argv[]){
 
     int veces;
 
-    printf("Programa= %s\n", argv[0]);
+    printf("Programa: %s\n", argv[0]);
 
     if (argc < 3)
         return EXIT_FAILURE;

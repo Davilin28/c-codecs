@@ -4,7 +4,6 @@
 
 int main(){
 
-
     FILE * archivo;
     char nombre;
 

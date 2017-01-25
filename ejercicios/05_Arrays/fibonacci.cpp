@@ -1,26 +1,24 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#define N 100
 
 int main(){
 
-    int pprevio =1,
-        previo =1,
-        ahora,
-        contador =2;
+  unsigned int pprevio =1,
+               previo =1,
+               ahora,
+
 
     printf(" %i, %i", pprevio,previo);
 
-    do{
+    for (int i=0; i<N; i++){
         ahora = pprevio + previo;
-        printf(" %i", ahora);
+        printf(" %u", ahora);
 
         pprevio = previo;
         previo = ahora;
-        contador++;
-    }while(contador < 100);
-
-    printf("\n");
+      }
 
     return EXIT_SUCCESS;
 }

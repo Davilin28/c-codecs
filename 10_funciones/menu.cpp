@@ -25,21 +25,23 @@ int main(int argc, char *argv[]){
 
     char opcion = menu();
 
-   if(opcion == camisetas)
+    switch(opcion){
 
-      printf("Has elegido camisetas\n");
+    case camisetas:
+            printf("Has elegido camisetas\n");
+        break;
 
-   if(opcion == compras)
+    case compras:
+            printf("Has elegido compras\n");
+        break;
 
-      printf("Has elegido compras\n");
+    case alimentacion:
+            printf("Has elegido alimentacion\n");
+        break;
 
-   if(opcion == alimentacion)
-
-      printf("Has elegido alimentacion\n");
-
-   if(opcion == juegos)
-
-      printf("Has elegido Juegos\n");
-
+    case juegos:
+            printf("Has elegido Juegos\n");
+        break;
+    }
     return EXIT_SUCCESS;
 }

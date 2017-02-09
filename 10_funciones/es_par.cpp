@@ -9,7 +9,6 @@ bool es_par(int n){
         return false;
 }
 
-
 int main(int argc, char *argv[]){
 
     int numero;

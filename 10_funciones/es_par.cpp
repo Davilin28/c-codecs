@@ -2,12 +2,8 @@
 #include <stdlib.h>
 
 bool es_par(int n){
-
-    if(n % 2 == 0)
-        return true;
-    else
-        return false;
-}
+    return n % 2 == 0;
+   }
 
 int main(int argc, char *argv[]){
 

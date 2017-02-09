@@ -1,2 +1,2 @@
-# programs-c-
-My class programs
+# Language C 
+Language C 

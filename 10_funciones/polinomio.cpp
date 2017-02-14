@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
     	for(int j=0; j<=max_cof; j++,potencia*=x)
 		resultado+=coeficiente[j]*potencia;
 
-	printf("Resultado es: %d \n", resultado);
+	printf("Resultado es: %i \n", resultado);
 	
 	return EXIT_SUCCESS;
 }

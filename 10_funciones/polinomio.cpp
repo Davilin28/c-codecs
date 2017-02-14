@@ -9,7 +9,7 @@ int main(int argc, char *argv[]){
 	int x;
 	int potencia = 1;
 	int max_cof;
-    int resultado = 0;
+    	int resultado = 0;
 	
 	printf("Indicar numero de coeficientes: \n");
 	scanf(" %i", &max_cof);
@@ -23,7 +23,7 @@ int main(int argc, char *argv[]){
 	printf("Dime el valor de x: \n");
 	scanf(" %i",&x);
 
-    for(int j=0; j<=max_cof; j++,potencia*=x)
+    	for(int j=0; j<=max_cof; j++,potencia*=x)
 		resultado+=coeficiente[j]*potencia;
 
 	printf("Resultado es: %d \n", resultado);

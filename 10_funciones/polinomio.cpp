@@ -5,28 +5,28 @@
 
 int main(int argc, char *argv[]){
 
-	int coeficiente[N];
-	int x;
-	int potencia = 1;
-	int max_cof;
-    	int resultado = 0;
-	
+	double coeficiente[N];
+	double x;
+	double potencia = 1;
+	double max_cof;
+    	double resultado = 0;
+
 	printf("Indicar numero de coeficientes: \n");
-	scanf(" %i", &max_cof);
-	
+	scanf(" %lf", &max_cof);
+
 	printf("Introducir los coeficientes: \n");
-	
+
 	for(int i=0; i <= max_cof; i++){
-		scanf(" %d", &coeficiente[i]);
+	    scanf(" %lf", &coeficiente[i]);
 	}
-	
+
 	printf("Dime el valor de x: \n");
-	scanf(" %i",&x);
+	scanf(" %lf",&x);
 
     	for(int j=0; j<=max_cof; j++,potencia*=x)
 		resultado+=coeficiente[j]*potencia;
 
-	printf("Resultado es: %i \n", resultado);
-	
+	printf("Resultado es: %.1lf \n", resultado);
+
 	return EXIT_SUCCESS;
 }

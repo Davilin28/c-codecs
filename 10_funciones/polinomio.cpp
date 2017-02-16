@@ -16,7 +16,7 @@ int main(int argc, char *argv[]){
 
 	printf("Introducir los coeficientes: \n");
 
-	for(int i=0; i <= max_cof; i++){
+	for(int i=0; i < max_cof; i++){
 	    scanf(" %lf", &coeficiente[i]);
 	}
 

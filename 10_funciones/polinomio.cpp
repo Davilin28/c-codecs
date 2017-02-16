@@ -7,18 +7,16 @@ int main(int argc, char *argv[]){
 
 	double coeficiente[N];
 	double x;
-	double potencia = 1;
-	double max_cof;
-    	double resultado = 0;
+	double max_cof,potencia = 1;
+        double resultado = 0;
 
 	printf("Indicar numero de coeficientes: \n");
 	scanf(" %lf", &max_cof);
 
 	printf("Introducir los coeficientes: \n");
 
-	for(int i=0; i <= max_cof; i++){
+	for(int i=0; i <max_cof; i++)
 	    scanf(" %lf", &coeficiente[i]);
-	}
 
 	printf("Dime el valor de x: \n");
 	scanf(" %lf",&x);
@@ -26,7 +24,7 @@ int main(int argc, char *argv[]){
     	for(int j=0; j<=max_cof; j++,potencia*=x)
 		resultado+=coeficiente[j]*potencia;
 
-	printf("Resultado es: %.1lf \n", resultado);
+	printf("Resultado es: %.2lf \n", resultado);
 
 	return EXIT_SUCCESS;
 }

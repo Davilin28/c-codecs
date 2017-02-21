@@ -12,9 +12,9 @@ double vx (double v, double x, double s){
    return v;
 }
 double vy (double v, double y, double s){
-    for(int i=0; i<s; i++){
+    for(int i=1; i<=s; i++){
         v += y * delta;
-        printf("En el segundo %lf, la velocidad de Y es: %lf\n", s,v);
+        printf("En el segundo %i, la velocidad de Y es: %.2lf\n", i,v);
         }
     return v;
 }
@@ -35,7 +35,7 @@ int main(int argc, char *argv[]){
 
     system("clear");
 
-    printf(" \nLa velocidad de X es: %lf y de Y es: %lf\n", vx (x, a[X], s), vy (y, a[Y], s));
+    printf(" \nLa velocidad de X es: %.2lf y de Y es: %.2lf\n", vx (x, a[X], s), vy (y, a[Y], s));
 
     return EXIT_SUCCESS;
 }

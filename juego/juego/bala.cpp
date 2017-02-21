@@ -7,8 +7,10 @@
 #define Y 1
 
 double vx (double v, double x, double s){
-   for(int i=0; i<s; i++)
+   for(int i=1; i<=s; i++){
        v += x * delta;
+   printf("En el segundo %i, la velocidad de X es: %.2lf\n",i,v);
+   }
    return v;
 }
 double vy (double v, double y, double s){
@@ -35,7 +37,7 @@ int main(int argc, char *argv[]){
 
     system("clear");
 
-    printf(" \nLa velocidad de X es: %.2lf y de Y es: %.2lf\n", vx (x, a[X], s), vy (y, a[Y], s));
+    vx (x, a[X], s), vy (y, a[Y], s);
 
     return EXIT_SUCCESS;
 }

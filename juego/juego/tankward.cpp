@@ -8,6 +8,9 @@
 #define XC 20
 #define YC 20
 
+#define X_C 20
+#define Y_C 20
+
 struct TTank1{
     double x;
     double y;
@@ -21,12 +24,12 @@ int main(int argc, char *argv[]){
 
     double t= 0.;
     struct TTank1 a= { 0., -10. },
-                       s= { 0.,   0. },
-                       v= {v.x, v.y};
+                  s= { 0.,   0. },
+                  v= {v.x,  v.y };
 
     struct TTank2 a2= { 0., -10. },
-                        s2= { 0.,   0. },
-                        v2= { v2.x, v2.y };
+                  s2= { 20.,   0. },
+                  v2= {v2.x, v2.y};
 
 /* Introducir datos para tanque 1 */
     printf("Insertar la velocidad de x para el tanque 1: \n");
@@ -47,7 +50,7 @@ int main(int argc, char *argv[]){
     curs_set(0);
 
 /* Pasen los años */
-    for (t=0.; s.y>=0. ; t+= DELTA){
+    for (t=0.; s.y >=0. || s2.y >=0. ; t+= DELTA){
 
 /* actualizar la fisica del tanque 1 */
         v.y += a.y * DELTA;
@@ -60,14 +63,14 @@ int main(int argc, char *argv[]){
         v2.y += a2.y * DELTA;
         s2.y += v2.y * DELTA;
 
-        v2.x += a2.x * DELTA;
-        s2.x += v2.x * DELTA;
+        v2.x -= a2.x * DELTA;
+        s2.x -= v2.x * DELTA;
 
 /* Representar */
 
         clear();
         mvprintw(YC-s.y, XC+s.x, "0"); // Representamos el disparo del tanque 1 como 0
-        mvprintw(YC-s2.y, XC+s2.x, "C"); // Representamos el disparo del tanque 2 como C
+        mvprintw(Y_C-s2.y, X_C+s2.x, "C"); // Representamos el disparo del tanque 2 como C
         refresh();
         usleep(100000);
     }

@@ -7,16 +7,16 @@
 #define Y 1
 
 double vx (double v, double x, double s){
-   for(int i=1; i<=s; i++){
-       v += x * delta;
+   for(int i=0; i<=s; i++){
    printf("En el segundo %i, la velocidad de X es: %.2lf\n",i,v);
+       v += x * delta;
    }
    return v;
 }
 double vy (double v, double y, double s){
-    for(int i=1; i<=s; i++){
-        v += y * delta;
+    for(int i=0; i<=s; i++){
         printf("En el segundo %i, la velocidad de Y es: %.2lf\n", i,v);
+        v += y * delta;
         }
     return v;
 }

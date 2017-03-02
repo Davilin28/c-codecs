@@ -5,11 +5,11 @@
 
 #define DELTA .1
 
-#define XC 20
-#define YC 20
+#define XC 40
+#define YC 40
 
-#define X_C 20
-#define Y_C 20
+#define X_C 40
+#define Y_C 40
 
 struct TTank1{
     double x;

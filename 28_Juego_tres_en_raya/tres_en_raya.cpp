@@ -110,7 +110,7 @@ char c1='1',
                printf("\n %c | %c | %c\n\n",c7,c8,c9);
           }
 
-          if (empate==1){
+       if (empate==1){
                printf("Empate.\n %d", jugador);
                printf("\n %c | %c | %c\n",c1,c2,c3);
                printf("-----------\n");
@@ -119,10 +119,10 @@ char c1='1',
                printf("\n %c | %c | %c\n\n",c7,c8,c9);
            }
 
-          fflush(stdin);
-          scanf("%c",&respuesta);
+        fflush(stdin);
+        scanf("%c",&respuesta);
 
-          if (respuesta=='y'||respuesta=='Y'){
+        if (respuesta=='y'||respuesta=='Y'){
               empate=0;
               jugador=2;
               ganar=0;
@@ -138,7 +138,7 @@ char c1='1',
               }
           }
 
-          if(error==1){
+        if(error==1){
               if (jugador==1){
                jugador=2;
               }

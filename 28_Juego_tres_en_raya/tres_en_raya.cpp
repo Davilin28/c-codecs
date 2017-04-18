@@ -26,11 +26,11 @@ char c1='1',
       error=1;
       system("clear");
 
-      printf("El JUEGO DEL TRES EN RAYA\n");
+      printf("Las tres en raya\n");
       printf("\n %c | %c | %c\n",c1,c2,c3);
-      printf("-----------\n");
+      printf("\n-----------\n");
       printf("\n %c | %c | %c\n",c4,c5,c6);
-      printf("-----------\n");
+      printf("\n-----------\n");
       printf("\n %c | %c | %c\n\n",c7,c8,c9);
 
       if(jugador==1){
@@ -41,7 +41,7 @@ char c1='1',
            marca='O';
      }
 
-     printf("Turno del Jugador %d.",jugador);
+     printf("\nTurno del Jugador %d.\n",jugador);
      printf("\nPon la posicion de la ficha donde colocas: ");
 
      fflush(stdin);
@@ -104,18 +104,18 @@ char c1='1',
           if (ganar==1){
                printf("Jugador: %d a ganado\n\n",jugador);
                printf("\n %c | %c | %c\n",c1,c2,c3);
-               printf("-----------\n");
+               printf("\n-----------\n");
                printf("\n %c | %c | %c\n",c4,c5,c6);
-               printf("-----------\n");
+               printf("\n-----------\n");
                printf("\n %c | %c | %c\n\n",c7,c8,c9);
           }
 
        if (empate==1){
                printf("Empate.\n %d", jugador);
                printf("\n %c | %c | %c\n",c1,c2,c3);
-               printf("-----------\n");
+               printf("\n-----------\n");
                printf("\n %c | %c | %c\n",c4,c5,c6);
-               printf("-----------\n");
+               printf("\n-----------\n");
                printf("\n %c | %c | %c\n\n",c7,c8,c9);
            }
 

@@ -28,9 +28,9 @@ char c1='1',
 
       printf("El JUEGO DEL TRES EN RAYA\n");
       printf("\n %c | %c | %c\n",c1,c2,c3);
-      printf("---+---+---\n");
+      printf("-----------\n");
       printf("\n %c | %c | %c\n",c4,c5,c6);
-      printf("---+---+---\n");
+      printf("-----------\n");
       printf("\n %c | %c | %c\n\n",c7,c8,c9);
 
       if(jugador==1){
@@ -57,7 +57,7 @@ char c1='1',
           else if (tiro=='7' && c7=='7') {c7=marca;}
           else if (tiro=='8' && c8=='8') {c8=marca;}
           else if (tiro=='9' && c9=='9') {c9=marca;}
-          else {printf("Error! No vale ese movimiento\n"); error=2;}
+          else {printf("No vale ese movimiento\n"); error=2;}
 
      if(c1=='X'||c1=='O'){
            if(c2==c1&&c3==c1){
@@ -102,20 +102,20 @@ char c1='1',
       if (ganar==1||empate==1){
               system("clear");
           if (ganar==1){
-               printf("Jugador: %d Gana!\n\n",jugador);
+               printf("Jugador: %d a ganado\n\n",jugador);
                printf("\n %c | %c | %c\n",c1,c2,c3);
-               printf("---+---+---\n");
+               printf("-----------\n");
                printf("\n %c | %c | %c\n",c4,c5,c6);
-               printf("---+---+---\n");
+               printf("-----------\n");
                printf("\n %c | %c | %c\n\n",c7,c8,c9);
           }
 
           if (empate==1){
-               printf("Empate!\n %d", jugador);
+               printf("Empate.\n %d", jugador);
                printf("\n %c | %c | %c\n",c1,c2,c3);
-               printf("---+---+---\n");
+               printf("-----------\n");
                printf("\n %c | %c | %c\n",c4,c5,c6);
-               printf("---+---+---\n");
+               printf("-----------\n");
                printf("\n %c | %c | %c\n\n",c7,c8,c9);
            }
 

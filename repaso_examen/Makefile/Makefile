@@ -6,7 +6,7 @@ DDIR = ../dist
 
 CFLAGS = -g -I$(IDIR)
 
-DEPS = $(wildcard $(IDIR)/ *.h)
+DEPS = $(wildcard $(IDIR)/*.h)
 OBJS = $(patsubst %.cpp, %.o, $(wildcard *.cpp))
 
 $(TARGET): $(OBJS)
